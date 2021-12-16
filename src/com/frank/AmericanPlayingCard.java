@@ -55,7 +55,7 @@ public class AmericanPlayingCard extends PlayingCard{
 			  suitMap.containsKey(suit) ? suit : DEFAULTSUIT,               // If valid suit passed, use it otherwise use DEFAULTSUIT
 		      suitMap.get(suit) != null ? suitMap.get(suit) : DEFAULTCOLOR);// If valid suit passed, use color for suit otherwise use DEFAULTCOLOR  
 		
-		if (value > MAXVALUE) {
+		if (value > MAXVALUE) { // if the value we received ex
 			setValue(MAXVALUE);
 		}
 		if (value < MINVALUE) {
